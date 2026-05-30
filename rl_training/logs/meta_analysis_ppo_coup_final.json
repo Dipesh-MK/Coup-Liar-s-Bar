@@ -1,0 +1,199 @@
+{
+    "action_selection_count": 1731,
+    "actions": {
+        "Income": 224,
+        "Foreign Aid": 828,
+        "Coup": 76,
+        "Tax": 157,
+        "Steal": 348,
+        "Assassinate": 46,
+        "Exchange": 52
+    },
+    "actions_by_coins": {
+        "less_than_5": {
+            "Income": 144,
+            "Foreign Aid": 447,
+            "Coup": 0,
+            "Tax": 96,
+            "Steal": 227,
+            "Assassinate": 33,
+            "Exchange": 48
+        },
+        "5_or_more": {
+            "Income": 80,
+            "Foreign Aid": 381,
+            "Coup": 76,
+            "Tax": 61,
+            "Steal": 121,
+            "Assassinate": 13,
+            "Exchange": 4
+        }
+    },
+    "actions_by_influence": {
+        "1_influence": {
+            "Income": 105,
+            "Foreign Aid": 223,
+            "Coup": 37,
+            "Tax": 72,
+            "Steal": 178,
+            "Assassinate": 18,
+            "Exchange": 9
+        },
+        "2_influence": {
+            "Income": 119,
+            "Foreign Aid": 605,
+            "Coup": 39,
+            "Tax": 85,
+            "Steal": 170,
+            "Assassinate": 28,
+            "Exchange": 43
+        }
+    },
+    "bluff_attempts": {
+        "Duke": 28,
+        "Assassin": 0,
+        "Captain": 8,
+        "Ambassador": 1,
+        "Contessa": 68
+    },
+    "bluff_successes": {
+        "Duke": 28,
+        "Assassin": 0,
+        "Captain": 6,
+        "Ambassador": 1,
+        "Contessa": 68
+    },
+    "bluff_total_claims": {
+        "Duke": 291,
+        "Assassin": 46,
+        "Captain": 778,
+        "Ambassador": 67,
+        "Contessa": 184
+    },
+    "bluff_by_stage": {
+        "early": {
+            "attempts": 2,
+            "total_actions": 224
+        },
+        "mid": {
+            "attempts": 5,
+            "total_actions": 214
+        },
+        "late": {
+            "attempts": 98,
+            "total_actions": 928
+        }
+    },
+    "bluff_by_opponent_type": {
+        "rule_based": {
+            "attempts": 104,
+            "total_actions": 1182
+        },
+        "passive": {
+            "attempts": 0,
+            "total_actions": 152
+        },
+        "aggressive": {
+            "attempts": 1,
+            "total_actions": 32
+        }
+    },
+    "challenges": {
+        "total_opportunities": 2684,
+        "made": 21,
+        "won": 11,
+        "challenges_by_action": {
+            "Steal": 4,
+            "block Duke": 7,
+            "block Contessa": 9,
+            "Assassinate": 1
+        },
+        "challenge_by_opponent_action_count": {
+            "used_0_1_times": {
+                "opportunities": 244,
+                "challenges": 4
+            },
+            "used_2_plus_times": {
+                "opportunities": 2440,
+                "challenges": 17
+            }
+        },
+        "challenge_by_influence": {
+            "1_influence": {
+                "opportunities": 926,
+                "challenges": 7
+            },
+            "2_influence": {
+                "opportunities": 1758,
+                "challenges": 14
+            }
+        }
+    },
+    "blocks": {
+        "total_opportunities": 1467,
+        "made": 763,
+        "passed": 704,
+        "by_character": {
+            "Duke": 134,
+            "Assassin": 0,
+            "Captain": 430,
+            "Ambassador": 15,
+            "Contessa": 184
+        }
+    },
+    "adaptive": {
+        "stage_actions": {
+            "early": {
+                "Income": 50,
+                "Foreign Aid": 60,
+                "Coup": 0,
+                "Tax": 41,
+                "Steal": 59,
+                "Assassinate": 12,
+                "Exchange": 42
+            },
+            "mid": {
+                "Income": 73,
+                "Foreign Aid": 53,
+                "Coup": 19,
+                "Tax": 57,
+                "Steal": 51,
+                "Assassinate": 19,
+                "Exchange": 3
+            },
+            "late": {
+                "Income": 101,
+                "Foreign Aid": 715,
+                "Coup": 57,
+                "Tax": 59,
+                "Steal": 238,
+                "Assassinate": 15,
+                "Exchange": 7
+            }
+        },
+        "winning_actions": {
+            "Income": 46,
+            "Foreign Aid": 71,
+            "Coup": 17,
+            "Tax": 29,
+            "Steal": 74,
+            "Assassinate": 14,
+            "Exchange": 3
+        },
+        "losing_actions": {
+            "Income": 72,
+            "Foreign Aid": 28,
+            "Coup": 11,
+            "Tax": 41,
+            "Steal": 152,
+            "Assassinate": 9,
+            "Exchange": 3
+        },
+        "steals_by_opponent_coins": {
+            "richest": 276,
+            "other": 72
+        },
+        "duke_claims_after_challenged_loss": 0,
+        "duke_claims_total_after_challenged_loss": 157
+    }
+}

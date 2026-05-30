@@ -1,0 +1,46 @@
+{
+    "step": 425000,
+    "games_in_window": 500,
+    "seat_win_rates": {
+        "P0": 0.61,
+        "P1": 0.11,
+        "P2": 0.108,
+        "P3": 0.078,
+        "P4": 0.068,
+        "P5": 0.024
+    },
+    "seat_bias_alert": true,
+    "fav_winner_action": "Tax",
+    "fav_loser_action": "Income",
+    "bluff_success_rate": 0.3650857031857032,
+    "bluff_trend": "rising",
+    "challenge_frequency": 6.706,
+    "challenge_trend": "falling",
+    "avg_game_length": 16.978,
+    "length_trend": "rising",
+    "dominant_action": null,
+    "dominant_pct": 0.0,
+    "top_chains": [
+        {
+            "chain": [
+                "pass",
+                "pass"
+            ],
+            "count": 5319
+        },
+        {
+            "chain": [
+                "challenge",
+                "reveal"
+            ],
+            "count": 3125
+        },
+        {
+            "chain": [
+                "reveal",
+                "reveal"
+            ],
+            "count": 1951
+        }
+    ]
+}

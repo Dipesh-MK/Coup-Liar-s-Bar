@@ -1,0 +1,51 @@
+# Python caches and compiles
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Testing
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+
+# Next.js and Frontend
+liars_bar_3d/node_modules/
+liars_bar_3d/.next/
+liars_bar_3d/out/
+liars_bar_3d/build/
+liars_bar_3d/tsconfig.tsbuildinfo
+.next/
+node_modules/
+
+# IDE and Editor configs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Project-specific caches and local configs
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+scratch/
+temp/
+tmp/
+*.log

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coup - Premium Edition</title>
+    <!-- Google Fonts for premium typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Premium background glowing gradients -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Lobby / Join Screen -->
+    <div id="lobby-screen" class="screen active">
+        <div class="lobby-card glass">
+            <h1 class="logo-title">COUP</h1>
+            <p class="subtitle">Variant Edition with AI Agents</p>
+            
+            <div id="join-form" class="form-group">
+                <input type="text" id="player-name-input" placeholder="Enter Your Name" maxlength="15" autocomplete="off">
+                
+                <!-- Avatar selection grid -->
+                <div class="avatar-picker-label">Choose Your Avatar:</div>
+                <div id="avatar-grid" class="avatar-grid">
+                    <span class="avatar-option selected" data-avatar="🧙‍♂️">🧙‍♂️</span>
+                    <span class="avatar-option" data-avatar="🧛‍♂️">🧛‍♂️</span>
+                    <span class="avatar-option" data-avatar="🦄">🦄</span>
+                    <span class="avatar-option" data-avatar="👽">👽</span>
+                    <span class="avatar-option" data-avatar="🤡">🤡</span>
+                    <span class="avatar-option" data-avatar="🤠">🤠</span>
+                    <span class="avatar-option" data-avatar="🤖">🤖</span>
+                    <span class="avatar-option" data-avatar="🦊">🦊</span>
+                    <span class="avatar-option" data-avatar="🦁">🦁</span>
+                    <span class="avatar-option" data-avatar="🐙">🐙</span>
+                    <span class="avatar-option" data-avatar="👻">👻</span>
+                    <span class="avatar-option" data-avatar="💀">💀</span>
+                </div>
+
+                <!-- Host game settings -->
+                <div class="lobby-settings-label">Lobby Configuration (Host Only):</div>
+                <div class="lobby-selectors">
+                    <div class="selector-group">
+                        <label for="total-players-select">Lobby Size:</label>
+                        <select id="total-players-select" class="lobby-select">
+                            <option value="3" selected>3 Players</option>
+                            <option value="4">4 Players</option>
+                            <option value="5">5 Players</option>
+                            <option value="6">6 Players</option>
+                        </select>
+                    </div>
+                    <div class="selector-group">
+                        <label for="ai-count-select">AI Opponents:</label>
+                        <select id="ai-count-select" class="lobby-select">
+                            <option value="1">1 Bot</option>
+                            <option value="2" selected>2 Bots</option>
+                            <option value="3">3 Bots</option>
+                            <option value="4">4 Bots</option>
+                            <option value="5">5 Bots</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="join-btn" class="btn primary-btn">Join & Create Lobby</button>
+            </div>
+            
+            <div id="lobby-waiting" class="waiting-area hidden">
+                <h3 class="lobby-heading">Connected Players</h3>
+                <ul id="players-list" class="players-list">
+                    <!-- Dynamic client injection -->
+                </ul>
+                <div class="lobby-status-text">Waiting for players to connect...</div>
+                <button id="start-btn" class="btn host-btn hidden">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Game Play Screen -->
+    <div id="game-screen" class="screen">
+        <div class="game-container">
+            <!-- Sidebar: Log panel & History -->
+            <div class="sidebar glass">
+                <div class="sidebar-header">
+                    <h2>Game Logs</h2>
+                </div>
+                <div id="log-console" class="log-console">
+                    <!-- Dynamic log injection -->
+                </div>
+            </div>
+
+            <!-- Main circular playing area -->
+            <div class="board-area">
+                <div class="table-container">
+                    <div id="game-table" class="game-table">
+                        <div class="table-felt"></div>
+                        <div class="table-glow-ring"></div>
+                        
+                        <!-- Center table assets -->
+                        <div class="center-assets">
+                            <div id="deck-pile" class="deck-pile card-back">
+                                <span class="deck-count">15</span>
+                            </div>
+                            
+                            <div id="discard-pile" class="discard-pile empty">
+                                <div class="card-face">None</div>
+                            </div>
+                            
+                            <!-- 3D Treasury Box (Treasury) -->
+                            <div id="treasury-box" class="treasury-box">
+                                <div class="box-lid"></div>
+                                <div class="box-body">
+                                    <div class="box-coins">👑🪙</div>
+                                    <div class="box-lbl">TREASURY</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Public / Community cards container -->
+                        <div id="public-cards-area" class="public-cards-area">
+                            <div class="public-cards-title">Public Cards Remainder</div>
+                            <div id="public-cards-container" class="public-cards-container">
+                                <!-- Dynamic community cards -->
+                            </div>
+                        </div>
+
+                        <!-- Current Stage & Turn HUD -->
+                        <div class="game-hud">
+                            <div id="hud-turn" class="hud-item">Turn 1</div>
+                            <div id="hud-stage" class="hud-item">Waiting...</div>
+                            <div id="hud-active-action" class="hud-active-action">No Active Action</div>
+                        </div>
+
+                        <!-- Player Seats (6 seats distributed in a circle) -->
+                        <div id="seats-container" class="seats-container">
+                            <!-- Seat divs will be injected dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom User Interaction / Action Panel -->
+                <div id="action-panel" class="action-panel glass">
+                    <div class="panel-header">YOUR ACTION SELECTION</div>
+                    <div id="action-options" class="action-options">
+                        <!-- Action buttons will be injected dynamically depending on stage -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TARGET SELECTION MODAL -->
+    <div id="target-modal" class="modal-overlay hidden">
+        <div class="modal glass">
+            <h3 id="target-modal-title">Select Target</h3>
+            <div id="target-buttons" class="target-buttons">
+                <!-- Injected targets -->
+            </div>
+            <button id="target-cancel-btn" class="btn secondary-btn">Cancel</button>
+        </div>
+    </div>
+
+    <!-- EXCHANGE SELECTION MODAL -->
+    <div id="exchange-modal" class="modal-overlay hidden">
+        <div class="modal glass wide-modal">
+            <h3>Card Exchange Selection</h3>
+            <p>Select which cards you want to KEEP in your hand:</p>
+            <div id="exchange-cards-container" class="exchange-cards">
+                <!-- Injected drawn cards -->
+            </div>
+            <button id="exchange-submit-btn" class="btn primary-btn disabled" disabled>Confirm Selection</button>
+        </div>
+    </div>
+
+    <!-- FLYING COINS / CARDS CONTAINERS (For animations) -->
+    <div id="animation-layer" class="animation-layer"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+    "participants": {
+        "Base": 986.781165176101,
+        "Bluffer": 1073.7040738144,
+        "Aggressor": 1059.0783156814603,
+        "Manipulator": 898.0902698431702,
+        "RuleBased": 982.3461754848691
+    },
+    "total_wins": {
+        "Base": 98,
+        "Bluffer": 104,
+        "Aggressor": 91,
+        "Manipulator": 96,
+        "RuleBased": 92
+    },
+    "total_games": {
+        "Base": 290,
+        "Bluffer": 289,
+        "Aggressor": 287,
+        "Manipulator": 292,
+        "RuleBased": 285
+    },
+    "matchup_matrix": {
+        "Base": {
+            "Base": 0.0,
+            "Bluffer": 0.3263888888888889,
+            "Aggressor": 0.3402777777777778,
+            "Manipulator": 0.3716216216216216,
+            "RuleBased": 0.3125
+        },
+        "Bluffer": {
+            "Base": 0.3402777777777778,
+            "Bluffer": 0.0,
+            "Aggressor": 0.3448275862068966,
+            "Manipulator": 0.35374149659863946,
+            "RuleBased": 0.4014084507042254
+        },
+        "Aggressor": {
+            "Base": 0.3402777777777778,
+            "Bluffer": 0.2827586206896552,
+            "Aggressor": 0.0,
+            "Manipulator": 0.3103448275862069,
+            "RuleBased": 0.3357142857142857
+        },
+        "Manipulator": {
+            "Base": 0.33783783783783783,
+            "Bluffer": 0.35374149659863946,
+            "Aggressor": 0.31724137931034485,
+            "Manipulator": 0.0,
+            "RuleBased": 0.3055555555555556
+        },
+        "RuleBased": {
+            "Base": 0.3055555555555556,
+            "Bluffer": 0.31690140845070425,
+            "Aggressor": 0.36428571428571427,
+            "Manipulator": 0.3055555555555556,
+            "RuleBased": 0.0
+        }
+    }
+}

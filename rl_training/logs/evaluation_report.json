@@ -1,0 +1,50 @@
+{
+    "model_path": "models/ppo_coup_final.zip",
+    "num_games_per_opponent": 500,
+    "opponents": {
+        "random": {
+            "win_rate": 0.912,
+            "avg_game_length": 9.588,
+            "bluff_rate": 0.112,
+            "challenge_rate": 0.826,
+            "seat_win_rates": {
+                "Seat 0": 0.9700598802395209,
+                "Seat 1": 0.8862275449101796,
+                "Seat 2": 0.8795180722891566
+            }
+        },
+        "rule_based": {
+            "win_rate": 0.882,
+            "avg_game_length": 9.696,
+            "bluff_rate": 0.11,
+            "challenge_rate": 0.732,
+            "seat_win_rates": {
+                "Seat 0": 0.9700598802395209,
+                "Seat 1": 0.8383233532934131,
+                "Seat 2": 0.8373493975903614
+            }
+        },
+        "passive": {
+            "win_rate": 0.89,
+            "avg_game_length": 9.776,
+            "bluff_rate": 0.116,
+            "challenge_rate": 0.774,
+            "seat_win_rates": {
+                "Seat 0": 0.9461077844311377,
+                "Seat 1": 0.8802395209580839,
+                "Seat 2": 0.8433734939759037
+            }
+        },
+        "aggressive": {
+            "win_rate": 0.924,
+            "avg_game_length": 9.674,
+            "bluff_rate": 0.098,
+            "challenge_rate": 0.776,
+            "seat_win_rates": {
+                "Seat 0": 0.9700598802395209,
+                "Seat 1": 0.9281437125748503,
+                "Seat 2": 0.8734939759036144
+            }
+        }
+    }
+}

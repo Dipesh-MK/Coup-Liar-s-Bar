@@ -1,0 +1,26 @@
+=================================================================
+  COUP RL META REPORT  |  STEP 700,000
+=================================================================
+Games in window : 500
+
+Seat Win Rates:
+  P0:  61.2%  ############
+  P1:  11.0%  ##
+  P2:  11.4%  ##
+  P3:   7.2%  #
+  P4:   6.0%  #
+  P5:   3.2%  
+  [ALERT] Seat bias > 15% — first-player advantage may be inflating P0 wins.
+
+Bluff Success Rate : 38.7%  (stable)
+Challenge Freq     : 6.58/game  (stable)
+Avg Game Length    : 18.6 turns  (falling)
+
+Winner fav action  : Steal
+Loser  fav action  : Income
+
+Top action chains:
+  1. pass -> pass  (6432x)
+  2. challenge -> reveal  (3016x)
+  3. reveal -> reveal  (1919x)
+=================================================================

@@ -1,0 +1,46 @@
+{
+    "step": 50000,
+    "games_in_window": 500,
+    "seat_win_rates": {
+        "P0": 0.514,
+        "P1": 0.118,
+        "P2": 0.16,
+        "P3": 0.098,
+        "P4": 0.054,
+        "P5": 0.046
+    },
+    "seat_bias_alert": true,
+    "fav_winner_action": "Steal",
+    "fav_loser_action": "Income",
+    "bluff_success_rate": 0.37864700854700856,
+    "bluff_trend": "rising",
+    "challenge_frequency": 4.96,
+    "challenge_trend": "rising",
+    "avg_game_length": 19.194,
+    "length_trend": "falling",
+    "dominant_action": null,
+    "dominant_pct": 0.0,
+    "top_chains": [
+        {
+            "chain": [
+                "pass",
+                "pass"
+            ],
+            "count": 4421
+        },
+        {
+            "chain": [
+                "challenge",
+                "reveal"
+            ],
+            "count": 2949
+        },
+        {
+            "chain": [
+                "Steal",
+                "pass"
+            ],
+            "count": 1482
+        }
+    ]
+}

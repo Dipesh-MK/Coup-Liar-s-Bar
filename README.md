@@ -19,16 +19,6 @@ Explore the highly detailed, immersive 3D tavern environment and premium user in
       <img src="snapshots/media__1780128688080.png" alt="HUD Action Modal" style="border-radius: 12px; width: 100%; border: 1px solid #444;" />
     </td>
   </tr>
-  <tr>
-    <td style="width: 50%; padding: 5px; border: none;">
-      <p align="center"><strong>Interactive Clue-Style Notes Sheet</strong></p>
-      <img src="snapshots/media__1780075956842.png" alt="Clue Notes Drawer" style="border-radius: 12px; width: 100%; border: 1px solid #444;" />
-    </td>
-    <td style="width: 50%; padding: 5px; border: none;">
-      <p align="center"><strong>Real-time Tavern Logs Archive (Fullscreen)</strong></p>
-      <img src="snapshots/media__1780130945189.jpg" alt="Tavern Log Archive Modal" style="border-radius: 12px; width: 100%; border: 1px solid #444;" />
-    </td>
-  </tr>
 </table>
 
 ---
